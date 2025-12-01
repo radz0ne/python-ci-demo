@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Python dependency files
+*.egg-info/
+dist/
+build/
+
+# VS Code settings
+.vscode/

@@ -1,0 +1,30 @@
+[project]
+name = "python-ci-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.flake8]
+max-line-length = 88
+ignore = ["E203", "W503", "E501"]
+exclude = ["__pycache__", ".venv", "build", "dist"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--tb=short -q"
+testpaths = ["tests"]
+
