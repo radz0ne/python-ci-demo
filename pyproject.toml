@@ -13,7 +13,7 @@ target-version = ["py310"]
 [tool.flake8]
 max-line-length = 88
 ignore = ["E203", "W503"]
-exclude = ["__pycache__", ".venv", "venv", "build", "dist"]
+exclude = ["__pycache__", "**/.venv", "**/venv", "build", "dist",".venv"]
 
 [tool.coverage.run]
 branch = true
